@@ -25,7 +25,7 @@ namespace fakem.Controllers
             {
                 MWArray inputString = new MWCharArray("[]");
                 MWArray res = obj.fake_json(inputString);
-                return Ok(JsonSerializer.Serialize(res.ToString()));
+                return Ok(res.ToString());
             }
         }
     }
